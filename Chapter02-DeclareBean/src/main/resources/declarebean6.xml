@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 使用<alias>标签指定别名，别名也必须在IoC容器中唯一 -->
+    <bean name="declarebean6_name1" class="com.mynawang.test.HelloApiImpl"></bean>
+
+    <alias name="declarebean6_name1" alias="declarebean6_alias1"></alias>
+    <alias name="declarebean6_name1" alias="declarebean6_alias2"></alias>
+</beans>

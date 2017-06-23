@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 指定多个name，多个name用; , 空格分割，第一个被用作标识符，其他都是别名 -->
+    <bean name="declarebean5_name1;declarebean5_name2,declarebean5_name3 declarebean5_name4"
+          class="com.mynawang.test.HelloApiImpl"></bean>
+
+    <!-- 当指定id时，name指定的标识符全为别名 -->
+    <bean id="declarebean5_id1" name="declarebean5_2name1;declarebean5_2name2" class="com.mynawang.test.HelloApiImpl"></bean>
+
+</beans>

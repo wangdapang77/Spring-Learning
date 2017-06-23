@@ -9,6 +9,7 @@
 
   <modules>
     <module>Chapter01-HelloWorld</module>
+    <module>Chapter02-DeclareBean</module>
   </modules>
   <name>Spring-Learning Maven Webapp</name>
   <url>http://maven.apache.org</url>
