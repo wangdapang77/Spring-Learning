@@ -107,14 +107,13 @@ public class HelloTestTest {
         Assert.assertEquals(3, beanAlias1.length);
 
 
-
         // 根据id获取bean
         HelloApi helloApi3 = beanFactory.getBean("declarebean5_id1", HelloApi.class);
-        helloApi1.sayHello();
+        helloApi3.sayHello();
 
         // 根据别名获取bean
         HelloApi helloApi4 = beanFactory.getBean("declarebean5_2name1", HelloApi.class);
-        helloApi1.sayHello();
+        helloApi4.sayHello();
 
         // 获取所有别名
         String[] beanAlias2 = beanFactory.getAliases("declarebean5_id1");
@@ -123,9 +122,9 @@ public class HelloTestTest {
             System.out.println(alias);
         }
         Assert.assertEquals(2, beanAlias2.length);
+    }
 
 
-    } 
     
     /**
      * 

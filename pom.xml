@@ -10,8 +10,9 @@
   <modules>
     <module>Chapter01-HelloWorld</module>
     <module>Chapter02-DeclareBean</module>
+    <module>Chapter03-InstantiateBean</module>
   </modules>
-  <name>Spring-Learning Maven Webapp</name>
+  <name>Spring-Learning</name>
   <url>http://maven.apache.org</url>
 
   <dependencies>
@@ -139,6 +140,16 @@
 
   <build>
     <finalName>Spring-Learning</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 
 </project>
